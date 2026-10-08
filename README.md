@@ -43,34 +43,6 @@ Vector DB: FAISS (default), Qdrant (optional)
 Search: BM25 + Semantic Search
 PDF Processing: PyPDF2
 Tokenization: tiktoken
----
-🔑 Setup Instructions
-1. Clone the Repository
-git clone <github.com/saimukesh23/hybrid-rag/>
-cd hybrid-rag-main
----
-2. Install Dependencies
-pip install -r requirements.txt
----
-3. Add API Keys
-Create a `.streamlit/secrets.toml` file:
-GROQ_API_KEY = "your_groq_api_key"
-Optional (for persistent vector DB)
-QDRANT_API_KEY = "your_qdrant_api_key"
-QDRANT_ENDPOINT = "your_qdrant_url"
----
-4. Run the Application
-streamlit run app.py
----
-🌐 Deployment (Streamlit Cloud)
-Push project to GitHub
-Go to Streamlit Cloud
-Click New App
-Connect your repository
-Add secrets in App Settings → Secrets:
-GROQ_API_KEY = "your_key"
-Click Deploy
----
 🧠 How It Works
 1. PDF Processing
 Extracts text using PyPDF2
